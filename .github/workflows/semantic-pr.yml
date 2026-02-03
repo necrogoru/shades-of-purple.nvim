@@ -12,7 +12,7 @@ concurrency:
 jobs:
   semantic:
     name: PR Name linter
-    runs-on: linux-arm
+    runs-on: ubuntu-latest
     steps:
       - name: Branch checkout
         uses: actions/checkout@v4
