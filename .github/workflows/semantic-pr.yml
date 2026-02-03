@@ -1,0 +1,26 @@
+name: Semantic PR
+
+on:
+  pull_request:
+    types: [opened, reopened, edited, synchronize]
+    branches: [ main ]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event_name }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  semantic:
+    name: PR Name linter
+    runs-on: linux-arm
+    steps:
+      - name: Branch checkout
+        uses: actions/checkout@v4
+      - name: Install Bun sh
+        uses: oven-sh/setup-bun@v2
+      - name: Install commitlint and config
+        run: bun install -g @commitlint/config-conventional
+      - name: Lint PR name
+        run: echo "${PR_TITLE}" | bunx --bun commitlint
+        env:
+          PR_TITLE: '${{ github.event.pull_request.title }}'
