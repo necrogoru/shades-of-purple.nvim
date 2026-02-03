@@ -1,0 +1,7 @@
+*.log
+/.tests
+/build
+/debug
+/doc/tags
+
+.DS_Store
