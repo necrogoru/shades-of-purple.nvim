@@ -1,0 +1,79 @@
+*shades-of-purple.txt*    A professional Neovim theme with carefully chosen shades of purple
+
+==============================================================================
+Table of Contents                            *shades-of-purple-contents*
+
+1. Introduction .......................... |shades-of-purple-introduction|
+2. Installation .......................... |shades-of-purple-installation|
+3. Usage ................................. |shades-of-purple-usage|
+4. Features .............................. |shades-of-purple-features|
+5. Requirements .......................... |shades-of-purple-requirements|
+6. License ............................... |shades-of-purple-license|
+
+==============================================================================
+1. Introduction                              *shades-of-purple-introduction*
+
+Shades of Purple is a professional Neovim theme featuring carefully chosen
+shades of purple. It provides a beautiful and consistent color scheme across
+various UI elements and syntax highlighting.
+
+The theme is designed to be easy on the eyes while maintaining excellent
+readability and contrast for long coding sessions.
+
+==============================================================================
+2. Installation                              *shades-of-purple-installation*
+
+Using lazy.nvim: >lua
+    {
+      "jhonberrio/shades-of-purple",
+      lazy = false,
+      priority = 1000,
+    }
+<
+
+Using packer.nvim: >lua
+    use "jhonberrio/shades-of-purple"
+<
+
+Using vim-plug: >vim
+    Plug 'jhonberrio/shades-of-purple'
+<
+
+==============================================================================
+3. Usage                                     *shades-of-purple-usage*
+
+To enable the theme, add the following to your Neovim configuration:
+
+Lua configuration: >lua
+    vim.cmd([[colorscheme shades-of-purple]])
+<
+
+Or in your init.vim: >vim
+    colorscheme shades-of-purple
+<
+
+==============================================================================
+4. Features                                  *shades-of-purple-features*
+
+- Beautiful purple color palette
+- Consistent highlighting across all UI elements
+- Support for modern Neovim features
+- Optimized for readability and reduced eye strain
+- Works great in both dark environments
+- No configuration required - works out of the box
+
+==============================================================================
+5. Requirements                              *shades-of-purple-requirements*
+
+- Neovim >= 0.8.0
+- True color terminal support (termguicolors)
+
+The theme will automatically enable true colors when applied.
+
+==============================================================================
+6. License                                   *shades-of-purple-license*
+
+MIT License
+
+==============================================================================
+vim:tw=78:ts=8:ft=help:norl:
