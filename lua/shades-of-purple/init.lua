@@ -4,8 +4,9 @@ local M = {}
 local colors = require("shades-of-purple.colors")
 
 -- Theme setup function
-function M.setup(opts)
-  opts = opts or {}
+function M.setup()
+  -- Save options for future versions
+  -- opts = opts or {}
 
   -- Reset highlights
   vim.cmd("hi clear")
@@ -16,11 +17,11 @@ function M.setup(opts)
   vim.o.termguicolors = true
   vim.g.colors_name = "shades-of-purple"
 
-  M.load(opts)
+  M.load()
 end
 
 -- Load all highlight groups
-function M.load(opts)
+function M.load()
   local c = colors
 
   local highlights = {
