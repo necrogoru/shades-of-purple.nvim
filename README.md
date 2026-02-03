@@ -2,8 +2,8 @@
 
 A professional Neovim port of the popular [Shades of Purple](https://github.com/ahmadawais/shades-of-purple-vscode) VSCode theme.
 
-<img width="484" height="357" alt="Screenshot 2026-02-03 at 6 01 04 PM" src="https://github.com/user-attachments/assets/f1017e42-93b4-4fae-89a2-d10a356ee983" />
 <img width="495" height="459" alt="Screenshot 2026-02-03 at 6 01 15 PM" src="https://github.com/user-attachments/assets/c5d599dd-79ea-4808-86c2-436a064f5324" />
+<img width="484" height="357" alt="Screenshot 2026-02-03 at 6 01 04 PM" src="https://github.com/user-attachments/assets/f1017e42-93b4-4fae-89a2-d10a356ee983" />
 
 ## Features
 
