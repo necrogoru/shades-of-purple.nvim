@@ -92,6 +92,13 @@ require("shades-of-purple").setup({
 })
 ```
 
+## Tests
+To run the tests, use the following command:
+
+```bash
+nvim --headless --noplugin -u tests/minimal_init.lua -c "PlenaryBustedDirectory tests/ {minimal_init = 'tests/minimal_init.lua'}"
+```
+
 ## Credits
 
 Original theme by [Ahmad Awais](https://github.com/ahmadawais)

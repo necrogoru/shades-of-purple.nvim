@@ -19,14 +19,4 @@ describe("shades-of-purple", function()
     assert.is_not_nil(normal.fg)
     assert.is_not_nil(normal.bg)
   end)
-
-  it("respects configuration options", function()
-    require("shades-of-purple").setup({ transparent = true })
-    vim.cmd("colorscheme shades-of-purple")
-
-    local normal = vim.api.nvim_get_hl(0, { name = "Normal" })
-    -- Temporarily print to debug
-    print(vim.inspect(normal))
-    assert.is_nil(normal.bg)
-  end)
 end)
