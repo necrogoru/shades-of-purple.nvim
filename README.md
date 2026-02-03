@@ -30,7 +30,7 @@ A professional Neovim port of the popular [Shades of Purple](https://github.com/
 
 ```lua
 {
-  dir = "necrogoru/shades-of-purple.nvim",
+  "necrogoru/shades-of-purple.nvim",
   lazy = false,
   priority = 1000,
   config = function()
